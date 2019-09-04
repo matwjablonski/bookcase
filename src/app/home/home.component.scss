@@ -1,0 +1,19 @@
+.articles-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.article {
+  max-width: calc(33.3333% - 20px);
+  margin-bottom: 20px;
+
+  &-img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  &-desc {
+    line-height: 1.5;
+  }
+}

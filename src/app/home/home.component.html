@@ -1,0 +1,15 @@
+<h2>Co nowego w świecie książki?</h2>
+<section class="articles-wrapper">
+  <article *ngFor="let article of articles" class="article">
+    <mat-card>
+      <img mat-card-image src="//placehold.it/400/200" class="article-img" />
+      <mat-card-title>{{ article.title }}</mat-card-title>
+      <mat-card-subtitle *ngIf="article.subtitle">{{
+        article.subtitle
+      }}</mat-card-subtitle>
+      <mat-card-content>
+        <p class="article-desc">{{ article.description }}</p>
+      </mat-card-content>
+    </mat-card>
+  </article>
+</section>
