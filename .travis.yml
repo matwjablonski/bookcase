@@ -12,7 +12,6 @@ cache:
 before_script:
   - npm install -g @angular/cli yarn
 script:
-  - npm test
   - ng build --prod --base-href https://matwjablonski.github.io/bookcase/
 deploy:
   provider: pages
