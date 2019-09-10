@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 import { Observable, of } from "rxjs";
-import { articles } from "../mock/articles";
+import { ARTICLES } from "../mock/articles";
 
 export interface Article {
   id: string;
@@ -16,6 +16,6 @@ export class ArticlesService {
   constructor() {}
 
   getArticles(): Observable<Article[]> {
-    return of(articles);
+    return of(ARTICLES);
   }
 }

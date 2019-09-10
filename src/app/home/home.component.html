@@ -3,13 +3,21 @@
   <article *ngFor="let article of articles" class="article">
     <mat-card>
       <img mat-card-image src="//placehold.it/400/200" class="article-img" />
-      <mat-card-title>{{ article.title }}</mat-card-title>
+      <mat-card-title *ngIf="article.title">{{ article.title }}</mat-card-title>
       <mat-card-subtitle *ngIf="article.subtitle">{{
         article.subtitle
       }}</mat-card-subtitle>
       <mat-card-content>
-        <p class="article-desc">{{ article.description }}</p>
+        <p *ngIf="article.description" class="article-desc">
+          {{ article.description }}
+        </p>
       </mat-card-content>
     </mat-card>
+  </article>
+</section>
+<h2>Warto przeczytać</h2>
+<section class="books-wrapper">
+  <article *ngFor="let book of books" class="book">
+    <app-book [book]="book"></app-book>
   </article>
 </section>

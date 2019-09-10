@@ -7,6 +7,7 @@ enum Sex {
 }
 
 export interface Author {
+  id: string;
   name: string;
   fullName: string;
   alias: string;

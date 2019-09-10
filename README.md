@@ -1,5 +1,7 @@
 # BookcaseApp
 
+[![Build Status](https://travis-ci.org/matwjablonski/bookcase.svg?branch=master)](https://travis-ci.org/matwjablonski/bookcase)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 0.0.0.
 
 ## Development server
